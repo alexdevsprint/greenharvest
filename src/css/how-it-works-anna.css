@@ -1,0 +1,284 @@
+/* reset */
+ol {
+  list-style-type: none;
+}
+
+/* How it works Section */
+
+/* for mobile */
+.how-it-works-section {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to bottom,
+    #7a3145 0%,
+    #7a3145 43%,
+    #576f35 43%,
+    #576f35 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.title-container {
+  padding: 0;
+}
+.img-container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.cooking-woman-image {
+  display: block;
+  border-radius: 45px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 335px;
+}
+.text-container {
+  max-width: 100%;
+  padding: 80px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.text-title {
+  max-width: 335px;
+  max-height: 112px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .text-container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+  .text-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .steps-text {
+    margin-bottom: 40px;
+  }
+}
+.highlight {
+  color: #d4bfc4;
+}
+.steps-text {
+  max-width: 335px;
+  max-height: 54px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #fbfbfb;
+}
+
+.steps-ol-list {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: my-counter;
+  margin: 0 auto;
+}
+.order-steps-list {
+  padding: 0;
+  margin: 0;
+  counter-reset: section;
+}
+
+.order-steps-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  border-radius: 15px;
+  padding: 12px 24px;
+  max-width: 335px;
+  height: 76px;
+  margin-bottom: 20px;
+  background-color: #fbfbfb;
+  
+}
+.item-accent {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #141414;
+}
+.order-steps-item:last-child {
+  margin-bottom: 0;
+}
+.order-steps-list {
+  gap: 24px;
+}
+.steps-item-text-one {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #858585;
+  max-width: 325px;
+}
+.steps-item-text-two {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #858585;
+  max-width: 323px;
+  max-height: 40px;
+}
+.steps-item-text-three {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #858585;
+max-width: 210px;
+  max-height: 60px;
+}
+
+.order-steps-item::before {
+  display: flex;
+  counter-increment: section;
+  content: counters(section, '.') ' ';
+  font-weight: 600;
+  background-color: #7a3145;
+  border: solid;
+  border-width: 5px;
+  border-color: #d4bfc4;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfb;
+}
+/* for tablet */
+
+@media only screen and (min-width: 768px) {
+  .how-it-works-section {
+    background: linear-gradient(
+      to bottom,
+      #7a3145 0%,
+      #7a3145 60%,
+      #576f35 50%,
+      #576f35 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img-container {
+    max-width: 768px;
+    padding: 100px 64px;
+  }
+  .cooking-woman-image {
+    max-width: 640px;
+    height: auto;
+  }
+  .text-container {
+    padding: 100px 164px;
+    max-width: 768px;
+  }
+  .text-title {
+    max-width: 440px;
+    max-height: 96px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+  .steps-text {
+    max-width: 450px;
+    max-height: 60px;
+    font-size: 16px;
+    margin-bottom: 52px;
+  }
+  .order-steps-item {
+    max-width: 440px;
+    height: 76px;
+  }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1280px) {
+  .how-it-works-section {
+    background: linear-gradient(
+      to right,
+      #7a3145 0%,
+      #7a3145 43%,
+      #576f35 43%,
+      #576f35 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ 
+  .text-title {
+    margin-bottom: 48px;
+  }
+  .title-container {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(
+      to right,
+      #7a3145,
+      #7a3145,
+      #576f35,
+      #576f35
+    );
+    padding: 0;
+  }
+  .img-container {
+    margin: 0;
+    max-width: 640px;
+    padding: 100px 100px;
+    background-color: #7a3145;
+     width: 63%;
+  }
+  .cooking-woman-image {
+    max-width: 440px;
+    height: 560px;
+  }
+  .text-container {
+    max-width: 640px;
+    padding: 100px 100px;
+    background-color: #576f35;
+  }
+  .steps-text {
+    margin-bottom: 104px;
+  }
+  .steps-item-text-one {
+  max-width: 325px;
+}
+.steps-item-text-two {
+  max-width: 323px;
+}
+.steps-item-text-three {
+  max-width: 280px;
+}
+}
+/*  end How it works Section */

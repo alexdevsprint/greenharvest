@@ -1,0 +1,116 @@
+.hero {
+  padding: 0;
+  margin: 0;
+  background-color: #576f35;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+.hero-wrapper {
+  display: block;
+  padding: 100px 20px 40px 20px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    padding: 120px 32px 52px 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-wrapper {
+    width: 50%;
+    padding: 232px 36px 52px 100px;
+  }
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 76px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    margin-bottom: 128px;
+  }
+}
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fbfbfb;
+}
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 16px;
+    line-height: 125%;
+    max-width: 603px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-text {
+    width: 472px;
+  }
+}
+.hero-picture {
+  display: block;
+  height: 372px;
+  width: 100%;
+  background-image: url(/img/hero/healthy-food-mob.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-picture {
+    background-image: url(/img/hero/healthy-food-mob@2x.jpg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-picture {
+    height: 536px;
+    background-image: url(/img/hero/healthy-food-tabl.jpg);
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-picture {
+    background-image: url(/img/hero/healthy-food-tabl@2x.jpg);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-picture {
+    height: 796px;
+    width: 50%;
+    background-image: url(/img/hero/healthy-food.jpg);
+  }
+}
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero-picture {
+    background-image: url(/img/hero/healthy-food@2x.jpg);
+  }
+}

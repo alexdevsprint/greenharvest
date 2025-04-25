@@ -1,0 +1,22 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header-yurii.css');
+@import url('./iaroslav-menu.css');
+@import url('./hero-viktor.css');
+@import url('./how-it-works-anna.css');
+@import url('./advertisement-ivan.css');
+@import url('./vegetables-oleksiy.css');
+@import url('./reviews-dmitriy.css');
+@import url('./your-order-evetta.css');
+@import url('./footer-alex.css');

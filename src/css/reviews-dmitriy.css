@@ -1,0 +1,126 @@
+body {
+  background: #fbfbfb;
+}
+.rare {
+  padding: 80px 20px;
+} 
+br {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews {
+    background: #fbfbfb;
+  }
+  .rare {
+    padding: 100px 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .rare {
+    max-width: 1280px;
+    padding: 100px 100px;
+    margin: 0 auto;
+  }
+
+}
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+    line-height: 1;
+  }
+}
+span {
+  color: #576f35;
+}
+.descr {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #141414;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .descr {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 24px;
+  }
+  br {
+    display: none;
+  }
+}
+.reviews_list {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews_list {
+    margin-top: 52px;
+  }
+}
+.reviews_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  padding: 20px;
+
+  background: #fbfbfb;
+}
+@media only screen and (max-width: 767px) {
+  .reviews_item:not(:first-child) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1280px) {
+  .reviews_item {
+    min-width: 344px;
+  }
+  br {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews_item:nth-child(3) {
+    display: none;
+  }
+}
+.name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+  margin-top: 24px;
+}
+.descr-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #858585;
+  margin-top: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .descr-item {
+    font-size: 16px;
+    line-height: 1.25;
+    min-height: 100px;
+  }
+}

@@ -1,0 +1,111 @@
+<section class="order">
+  <div class="container section">
+    <h2 class="title-order">
+      Fresh <span class="title-span">Harvest</span> Box has got you covered
+    </h2>
+    <p class="title-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-content">
+      <div class="order-form">
+        <p class="order-text">
+          Ordering
+          <span class="order-accent">from us</span> is quick and easy! Fill out
+          <span class="order-accent-form">the form</span>
+          below and we will contact you !
+        </p>
+        <form class="order-send">
+          <label class="order-label"
+            ><input
+             required
+              class="order-input"
+              type="text"
+              name="user-name"
+              placeholder="Full Name"
+          /><span class="visually-hidden">user-name</span></label>
+          <label class="order-label" 
+            ><input
+              class="order-input input-valid"
+              type="email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              name="mail"
+            
+              required
+              placeholder="Email"
+          /><span class="visually-hidden">user-Email</span></label>
+          <label class="order-label"><span class="visually-hidden">user-comment</span>
+            <textarea
+              class="order-massage"
+              name="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+          <button class="order-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="social">
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="
+              /img/your-order/desktop/smoothie.jpg   1x,
+              /img/your-order/desktop/smoothie@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              /img/your-order/tablet/smoothie.jpg   1x,
+              /img/your-order/tablet/smoothie@2x.jpg 2x
+            "
+          />
+          <source
+            media="(max-width:767px)"
+            srcset="
+              /img/your-order/mobile/smoothie.jpg   1x,
+              /img/your-order/mobile/smoothie@2x.jpg 2x
+            "
+          />
+          <img
+            class="social-picture"
+            src="/img/your-order/desktop/smoothie.jpg"
+            alt="smoothie"
+            width="536"
+            height="316"
+          />
+        </picture>
+        <p class="social-text">Follow us on our social networks:</p>
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              href="https://www.instagram.com/goitclub/ "
+              target="_blank"
+              class="social-link"
+              >instagram
+            </a>
+          </li>
+          <!-- <li class="social-item"></li> -->
+          <li class="social-item">
+            <a
+              href="https://www.facebook.com/goITclub/ "
+              target="_blank"
+              class="social-link"
+              >facebook
+            </a>
+          </li>
+          <!-- <li class="social-item">/</li> -->
+          <li class="social-item">
+            <a
+              href="https://www.youtube.com/c/GoIT "
+              target="_blank"
+              class="social-link"
+              >youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
